@@ -1,5 +1,6 @@
 input, textarea, select {
     appearance: none;
+    outline: none;
     width: 100%;
     border-radius: .5rem;
     border: 2px solid var(--input-stroke);
@@ -16,5 +17,13 @@ label {
     color: var(--text-secondary);
 
     display: block;
-    margin-bottom: .75rem;
+}
+
+label + input {
+    margin-top: .75rem;
+}
+
+input:focus{
+    border-color: var(--brand-light);
+    outline-offset: .1px; /* alguns navegadores precisam desse comando para funcionar o outline e border */
 }

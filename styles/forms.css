@@ -20,7 +20,7 @@ form {
 
 fieldset {
     border: none;
-    
+    width: 35rem;
     display: grid;
     gap: 1.5rem;
 }

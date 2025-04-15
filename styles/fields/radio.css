@@ -1,0 +1,47 @@
+.radio-wrapper {
+    display: flex;
+    justify-items: center;
+    border-radius: .5rem;
+    border: 2px solid var(--input-stroke);
+    margin-top: .75rem;
+    height: 50px;
+    gap: 1rem;
+
+}
+
+.wrapper {
+    padding-block: .75rem;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+
+    .radio-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: .5rem;
+        padding: .656rem 1.125rem;
+        border-radius: .312rem;
+        width: 8.125rem;
+        position: relative;
+        transition: background 500ms;
+        
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+    
+        &:has(:checked) {
+            font: var(--text-body-sm);
+            color: var(--text-heading);
+            background-color: var(--shape-button);
+            & svg path { /* Faz a mudança da cor do icone, necessario colocar o svg no html */
+                stroke: var(--brand-light);
+            }
+        }
+    }   
+}
