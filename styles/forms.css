@@ -1,0 +1,26 @@
+@import url(fields/index.css);
+
+form {
+    margin-inline: 8.125rem;
+    .about-event {
+        display: flex;
+        align-items: center;
+        margin-top: 2.5rem;
+
+        & img {
+            margin-right: .75rem;
+        }
+
+        & legend {
+            font: var(--text-heading-sm);
+            color: var(--text-heading);
+        }
+    }
+}
+
+fieldset {
+    border: none;
+    
+    display: grid;
+    gap: 1.5rem;
+}
