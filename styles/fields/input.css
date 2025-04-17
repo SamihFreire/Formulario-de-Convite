@@ -1,16 +1,16 @@
-input, textarea, select {
-    appearance: none;
-    outline: none;
-    width: 100%;
-    border-radius: .5rem;
-    border: 2px solid var(--input-stroke);
-
-    padding: .75rem 1rem;
-
-    font: var(--text-body-md);
-    color: var(--input-placeholder);
-    background-color: var(--input-base);
-}
+    input, textarea{
+        appearance: none;
+        
+        width: 100%;
+        border-radius: .5rem;
+        border: 2px solid var(--input-stroke);
+    
+        padding: .75rem 1rem;
+    
+        font: var(--text-body-md);
+        color: var(--input-placeholder);
+        background-color: var(--input-base);
+    }
 
 label {
     font: var(--text-body-sm);
@@ -23,7 +23,72 @@ label + input {
     margin-top: .75rem;
 }
 
-input:focus{
+label + textarea {
+    margin-top: .75rem;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
     border-color: var(--brand-light);
     outline-offset: .1px; /* alguns navegadores precisam desse comando para funcionar o outline e border */
+}
+
+.color-option {
+    margin-top: 1rem;
+
+    .color-option-wrapper {
+
+        &:has(:checked) {
+            input:checked {
+                outline: 2px solid var(--brand-light);
+            }
+        }
+
+        input{
+            width: 100%;
+            height: 40px;
+            width: 2.5rem;
+            border: 5px solid var(--shape-button);
+            border-radius: 50%;
+
+            &:hover {
+                border-color: var(--shape-hover);
+            }
+        }
+
+        #brand-light {
+            background-color: var(--brand-light);
+        }
+        #navy {
+            background-color: var(--navy);
+        }
+        #purple {
+            background-color: var(--purple);
+        }
+        #fuschia {
+            background-color: var(--fuschia);
+        }
+        #pink {
+            background-color: var(--pink);
+        }
+        #danger {
+            background-color: var(--danger);
+        }
+        #orange {
+            background-color: var(--orange);
+        }
+        #yellow {
+            background-color: var(--yellow);
+        }
+        #lime {
+            background-color: var(--lime);
+        }
+        #green {
+            background-color: var(--green);
+        }
+        #cyan {
+            background-color: var(--cyan);
+        }
+    }
 }

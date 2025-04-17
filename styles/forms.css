@@ -2,7 +2,7 @@
 
 form {
     margin-inline: 8.125rem;
-    .about-event {
+    .about-event, .customization {
         display: flex;
         align-items: center;
         margin-top: 2.5rem;
@@ -23,4 +23,8 @@ fieldset {
     width: 35rem;
     display: grid;
     gap: 1.5rem;
+
+    textarea {
+        resize: none
+    }
 }
