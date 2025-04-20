@@ -35,7 +35,7 @@ textarea:focus{
 }
 
 .color-option {
-    margin-top: 1rem;
+    margin-block: 1rem 1.75rem;
 
     .color-option-wrapper {
 

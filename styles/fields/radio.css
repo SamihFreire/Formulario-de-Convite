@@ -45,3 +45,42 @@
         }
     }   
 }
+
+.event-theme-radio-wrapper {
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+
+    .event-theme-radio-inner{
+        height: 103px;
+        background-color: var(--shape-button);
+        outline: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        text-align: center;
+        position: relative;
+
+        img {
+            width: 100%;
+            padding: .25rem;
+            border-radius: .5rem;
+        }
+
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        &:hover {
+            background-color: var(--shape-hover);
+        }
+
+        &:has(:checked) {
+            input:checked {
+                outline: 2px solid var(--brand-light);
+                border-radius: .5rem;
+            }
+        }
+    }
+}
