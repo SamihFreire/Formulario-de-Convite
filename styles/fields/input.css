@@ -1,16 +1,16 @@
-    input, textarea{
-        appearance: none;
-        
-        width: 100%;
-        border-radius: .5rem;
-        border: 2px solid var(--input-stroke);
+input, textarea{
+    appearance: none;
     
-        padding: .75rem 1rem;
-    
-        font: var(--text-body-md);
-        color: var(--input-placeholder);
-        background-color: var(--input-base);
-    }
+    width: 100%;
+    border-radius: .5rem;
+    border: 2px solid var(--input-stroke);
+
+    padding: .75rem 1rem;
+
+    font: var(--text-body-md);
+    color: var(--input-placeholder);
+    background-color: var(--input-base);
+}
 
 label {
     font: var(--text-body-sm);
@@ -35,7 +35,7 @@ textarea:focus{
 }
 
 .color-option {
-    margin-block: 1rem 1.75rem;
+    margin-top: 1rem;
 
     .color-option-wrapper {
 

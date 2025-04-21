@@ -1,0 +1,67 @@
+.wrapper-style {
+    margin-top: 1.75rem;
+    width: 11rem;
+    height: 4.75rem;
+
+    #modeLabel {
+        display: flex;
+        align-items: end;
+        margin-inline: .75rem;
+    }
+
+    .toggle-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 2rem;
+        width: 4rem;
+        height: 2rem;
+    }
+    
+    .toggle {
+        position: relative;
+        width: 8rem;
+        height: 4rem;
+    }
+    
+    .toggle input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 4rem;
+        width: 4rem;
+        height: 2rem;
+        inset: 0;
+        transition: background-color 0.5s;
+    }
+    
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 1.5rem;
+        width: 1.5rem;
+        left: 0.17rem;
+        bottom: 0.2rem;
+        background-color: var(--input-stroke);
+        border-radius: 50%;
+        transition: transform 0.5s, background-color 0.5s;
+    }
+    
+    .toggle input:checked + .slider {
+        background-color: var(--brand-light);
+        border-color: var(--input-stroke);
+    }
+    
+    .toggle input:checked + .slider::before {
+        transform: translateX(2rem);
+        background-color: var(--text-heading);
+    }
+}
