@@ -51,7 +51,7 @@ main {
     overflow: auto;
     border-radius: .75rem;
     background-color: var(--shape-body);
-    min-width: 51.25rem;
+    min-width: 53.25rem;
 
     & .main-container {
         h1 {
