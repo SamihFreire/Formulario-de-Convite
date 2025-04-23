@@ -48,12 +48,22 @@
                         <div class="flex gap-16">
                             <div class="input-wrapper flex-1">
                                 <label for="start-date">Início</label>
-                                <input id="start-date" name="start-date" type="date" lang="pt-br">
+                                <input id="start-date" name="start-date" type="datetime-local" lang="pt-br">
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta vermelho">
+                                    <span>Formato incorreto</span>
+                                </div>
                             </div>
     
                             <div class="input-wrapper flex-1">
                                 <label for="end-date">Fim</label>
-                                <input id="end-date" name="end-date" type="date" lang="pt-br">
+                                <input id="end-date" name="end-date" type="datetime-local" lang="pt-br">
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta vermelho">
+                                    <span>Formato incorreto</span>
+                                </div>
                             </div>
                         </div>
 
@@ -254,6 +264,11 @@
                             <div class="input-wrapper flex-1">
                                 <label for="email">E-mail</label>
                                 <input id="email" name="email" type="email" placeholder="exemplo@email.com" required>
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta vermelho">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
     
                             <div class="input-wrapper flex-1">
@@ -306,9 +321,9 @@
           label.textContent = checkbox.checked ? 'Claro' : 'Escuro';
         });
 
-        const inputFile = document.getElementById('cover-photo');
 
         // cover-photo-droparea-wrapper
+        const inputFile = document.getElementById('cover-photo');
         const fileNameSpan = document.getElementById('file-name');
 
         inputFile.addEventListener('change', function () {

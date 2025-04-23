@@ -92,3 +92,27 @@ textarea:focus{
         }
     }
 }
+
+input[type="datetime-local"] {
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
+input {
+    &:invalid:focus {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &[required] + .error, &[type="datetime-local"] + .error{ 
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        margin-top: .25rem;
+        color: var(--danger);
+    }
+
+    &:not(:focus) + .error, &:valid + .error{
+        display: none;
+    }
+}
