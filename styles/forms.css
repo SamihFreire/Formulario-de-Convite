@@ -29,6 +29,6 @@ fieldset {
 }
 
 .actions-wrapper {
-    margin-top: 3rem;
+    margin-block: 3rem 5rem;
     justify-content: end;
 }

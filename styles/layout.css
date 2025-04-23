@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--shape-background);
 
@@ -10,7 +14,7 @@ body {
     display: grid;
     width: 1280px;
     grid-template-columns: 31.25% auto ;
-    height: 100vh;
+    height: 45.5rem;
     overflow: hidden;
     margin: 1.25rem;
     gap: 1.25rem;
